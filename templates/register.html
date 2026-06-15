@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register Complaint</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Register Complaint</h1>
+
+    <form method="POST">
+
+        <label>Room Number</label>
+        <input
+        type="text"
+        name="room_number"
+        placeholder="Enter Room Number"
+        required>
+
+        <label>Student Name</label>
+        <input
+        type="text"
+        name="student_name"
+        placeholder="Enter Student Name"
+        required>
+
+        <label>Category</label>
+
+        <select name="category">
+
+            <option>Mess</option>
+            <option>Cleanliness</option>
+            <option>Electricity</option>
+            <option>Water</option>
+            <option>WiFi</option>
+            <option>Security</option>
+            <option>Others</option>
+
+        </select>
+
+        <label>Anonymous Complaint?</label>
+
+        <select name="anonymous">
+
+            <option>Yes</option>
+            <option>No</option>
+
+        </select>
+
+        <label>Complaint</label>
+
+        <textarea
+        rows="5"
+        name="complaint"
+        placeholder="Enter Complaint Here"
+        required></textarea>
+
+        <button type="submit">
+            Submit Complaint
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

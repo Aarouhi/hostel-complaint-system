@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin Login</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="hero-card">
+
+        <h1>Admin Login</h1>
+
+        <p>
+            Access the administration dashboard to manage
+            and track hostel complaints.
+        </p>
+
+        <form method="POST">
+
+            <label>Username</label>
+
+            <input
+            type="text"
+            name="username"
+            placeholder="Enter Username"
+            required>
+
+            <label>Password</label>
+
+            <input
+            type="password"
+            name="password"
+            placeholder="Enter Password"
+            required>
+
+            <button type="submit">
+                Login
+            </button>
+
+        </form>
+
+        <br>
+
+        <div style="
+        background:#f5faf6;
+        border:1px solid #d6e4da;
+        border-radius:15px;
+        padding:15px;
+        ">
+
+            <h3>Demo Credentials</h3>
+
+            <p>
+                Username: <b>admin</b><br>
+                Password: <b>admin123</b>
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
